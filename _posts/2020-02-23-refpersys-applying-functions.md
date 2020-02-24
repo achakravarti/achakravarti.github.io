@@ -32,6 +32,7 @@ Rps_ClosureValue::apply2(Rps_CallFrame*callerframe, const Rps_Value arg0,
 } // end Rps_ClosureValue::apply2
 ```
 
+
 * This function is applying the closure to 2 arguments; this is analogous to the
   Scheme `apply` function: `apply (some-function '(arg0 arg1))`
 * We are asserting that the call frame is valid, and are enforcing a check even
@@ -48,4 +49,28 @@ Rps_ClosureValue::apply2(Rps_CallFrame*callerframe, const Rps_Value arg0,
   `callerfame->clear_closure()` before returning the result; we expect this to
   be compiled to one machine instruction with the `-O2` optimisation flag
   enabled.
+
+
+In lines 1588 to 1594, we have the following code snippet from
+`Rps_ClosureValue::apply7()`:
+
+```cpp
+std::vector<Rps_Value> restvec(3);
+  restvec[0] = arg4;
+  restvec[1] = arg5;
+  restvec[2] = arg6;
+  Rps_Value res= appfun(callerframe, arg0, arg1,
+                        arg2, arg3,
+                        &restvec);
+```
+
+
+* Arguments 4 to 6 of the closure are passed to the applying function through an
+  `std::vector` of `Rps_Value`s called `restvec`. `appfun` is limited to 6
+  parameters to take advantage of the 
+  [Linux ABI](https://github.com/hjl-tools/x86-psABI/wiki/x86-64-psABI-1.0.pdf)
+  specification that the first six parameters are passed through registers and not
+  the call stack
+* However, `restvec` is expected to be passed on the call stack (and not on the
+  heap) since pointers cannot be passed through registers.
 
