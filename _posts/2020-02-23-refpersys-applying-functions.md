@@ -6,6 +6,9 @@ tags: [refpersys, applying-functions, notes]
 comments: false
 ---
 
+In [inline_rps.hh](https://gitlab.com/bstarynk/refpersys/-/blob/6ecae5d2686c44145cf9a0e6b39a3c13a8a65996/inline_rps.hh),
+lines 1451 to 1470, we have the following code:
+
 ```cpp
 Rps_TwoValues
 Rps_ClosureValue::apply2(Rps_CallFrame*callerframe, const Rps_Value arg0,
@@ -28,4 +31,7 @@ Rps_ClosureValue::apply2(Rps_CallFrame*callerframe, const Rps_Value arg0,
   return res;
 } // end Rps_ClosureValue::apply2
 ```
+
+* This function is applying the closure to 2 arguments; this is analogous to the
+  Scheme `apply` function: `apply (some-function '(arg0 arg1))`
 
