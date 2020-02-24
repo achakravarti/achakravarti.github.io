@@ -34,4 +34,18 @@ Rps_ClosureValue::apply2(Rps_CallFrame*callerframe, const Rps_Value arg0,
 
 * This function is applying the closure to 2 arguments; this is analogous to the
   Scheme `apply` function: `apply (some-function '(arg0 arg1))`
+* We are asserting that the call frame is valid, and are enforcing a check even
+  with assertions off.
+* `obconn` is the connective object (defined in the `fn` field of closures in
+  the persisten store.
+* We get a pointer to the function of the closure through a call to
+  `obconn->get_applyingfun(*this)` and save it in `appfun`.
+* Call frames have slots for closures, and we set the call frame slot for the 
+  closure through `callerframe->set_closure(*this)`.
+* We apply the closure function and get two values as the result, which are
+  saved in `res`; we anticipate that the two values are stored in registers.
+* We clear the closure from the call frame through a call to
+  `callerfame->clear_closure()` before returning the result; we expect this to
+  be compiled to one machine instruction with the `-O2` optimisation flag
+  enabled.
 
