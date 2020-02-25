@@ -1,16 +1,17 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: About Me
+subtitle: Hello, world!
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Abhishek Chakravarti. I live and work in Kolkata, India. I enjoy
+programming, and it grew out of a hobby in my school days to a full-fledged
+profession. 
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I have had a somewhat eccentric career, and have often found myself drawn into
+into administrative roles that I did not enjoy. Rather late in life, I have
+understood that I am happiest while tinkering with source code while working in
+the GNU/Linux ecosystem.
 
-What else do you need?
+<figure><embed src="https://wakatime.com/share/@abhishekc/6a77b866-0ad6-4dda-b6bc-88ce95cd01c8.svg"></embed></figure>
 
-### my history
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
