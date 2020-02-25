@@ -17,7 +17,7 @@ Since Feb 24, 2020, just for fun, I have been using WakaTime to track the
 metrics related to my coding activities. Here are the figures:
 
 <figure>
-  <embed src="https://wakatime.com/share/@abhishekc/ef8b4102-ec80-4499-a68f-46b24453f2e4.svg"></embed>
+  <embed src="https://wakatime.com/share/@abhishekc/ef8b4102-ec80-4499-a68f-46b24453f2e4.svg">
 </figure>
 
 <figure>
@@ -25,11 +25,11 @@ metrics related to my coding activities. Here are the figures:
 </figure>
 
 <figure>
-  <embed src="https://wakatime.com/share/@abhishekc/ca8f0dfe-9328-45dd-aae9-b919060089b9.svg"></embed>
+  <embed src="https://wakatime.com/share/@abhishekc/ca8f0dfe-9328-45dd-aae9-b919060089b9.svg">
 </figure>
 
 <figure>
-  <embed src="https://wakatime.com/share/@abhishekc/fdd57b81-1644-4575-a62a-c639c07f1988.svg"></embed>
+  <embed src="https://wakatime.com/share/@abhishekc/fdd57b81-1644-4575-a62a-c639c07f1988.svg">
 </figure>
 
 
