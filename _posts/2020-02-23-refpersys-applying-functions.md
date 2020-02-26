@@ -1,10 +1,17 @@
 ---
 layout: post
 title: Applying functions in RefPerSys
-subtitle: Notes based on commit 6ecae5d2686c44145cf9a0e6b39a3c13a8a65996
+subtitle: Notes based on commit 6ecae5d2
 tags: [refpersys, applying-functions, notes]
 comments: false
 ---
+
+These notes are based on commit 
+[6ecae5d2686c44145cf9a0e6b39a3c13a8a65996](https://gitlab.com/bstarynk/refpersys/-/tree/6ecae5d2686c44145cf9a0e6b39a3c13a8a65996)
+of the [RefPerSys](http://refpersys.org) project, and have been kindly reviewed
+and improved by 
+[Basile Starynkevitch](http://starynkevitch.net/Basile/index_en.html), the
+architect and project lead of RefPerSys.
 
 In [inline_rps.hh](https://gitlab.com/bstarynk/refpersys/-/blob/6ecae5d2686c44145cf9a0e6b39a3c13a8a65996/inline_rps.hh),
 lines 1451 to 1470, we have the following code:
