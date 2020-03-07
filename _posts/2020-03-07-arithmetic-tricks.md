@@ -22,14 +22,10 @@ comments: false
 ## Examples
 
 * 42 * 11:
-  ```
   1. sum = 4 + 2 = 6
   2. product = 462
-  ```
 
 * 99 * 11:
-  ```
   1. sum = 9 + 9 = 18
   2. product = 1089
-  ```
 
