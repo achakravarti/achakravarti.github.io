@@ -23,6 +23,6 @@ devmon &
 ```
 
 References:
-  * [][https://ignorantguru.github.io/udevil/]
-  * [][https://igurublog.wordpress.com/downloads/script-devmon/]
+  * <https://ignorantguru.github.io/udevil/>
+  * <https://igurublog.wordpress.com/downloads/script-devmon/>
 
