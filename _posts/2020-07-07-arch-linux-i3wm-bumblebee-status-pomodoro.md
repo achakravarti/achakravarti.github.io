@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Setting up Pomodoro Module in Bumblebee Status
-subtitle: How to configure the `pomodoro` module of `bumblebee-status` on Arch
-Linux with `i3wm`
+subtitle: Part of the series on Arch Linux
 tags: [arch-linux, i3wm, bumblebee-status, pomodoro]
 comments: false
 ---
@@ -24,7 +23,7 @@ SOUND="/usr/share/sounds/freedesktop/stereo/alarm-clock-elapsed.oga"
 notify-send Pomodoro "Take a break!" & paplay $SOUND
 ```
 
-In ~/.config/i3/config:
+In `~/.config/i3/config`:
 ```
 exec dunst
 ```
